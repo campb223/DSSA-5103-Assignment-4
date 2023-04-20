@@ -6,7 +6,7 @@ library(knitr)
 library(dplyr)
 
 #reading in our data (netflix)
-netflix <- read_csv(file = "netflix1.csv")
+netflix <- read_csv(file = "netflix.csv")
 
 
 #getting overview of data

@@ -12,8 +12,8 @@ library(lwgeom)
 library(DT)
 
 #reading in our data (netflix)
-netflix <- read.csv("../data/netflix1.csv")
-netflix_rec <- read.csv("../data/netflix1.csv") %>%
+netflix <- read.csv("../data/netflix.csv")
+netflix_rec <- read.csv("../data/netflix.csv") %>%
   select(-show_id, -date_added)
 
 #Dashboard header
@@ -38,7 +38,7 @@ ui <- dashboardPage(
         ),
         
         tags$a(
-          href="https://github.com/campb223", target="_blank",
+          href="https://github.com/campb223/DSSA-5103-Assignment-4", target="_blank",
           icon("github"),
           "View Source on Github"
         )
