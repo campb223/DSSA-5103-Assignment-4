@@ -56,7 +56,7 @@ ui <- dashboardPage(
           min-height: 100%;
         }
        .tab-content {
-         padding: 10px 0px 0px 10px;
+         padding: 0px 0px 0px 0px;
        }
        .dashboard-body {
           overflow-x: auto;
@@ -73,18 +73,25 @@ ui <- dashboardPage(
     tabItems(
       tabItem(tabName = "summary", 
               fluidRow(
-                column(8, plotlyOutput("map_plot", height = "850px")),
-                column(4, 
+                column(12,
                        fluidRow(
-                         column(12, valueBoxOutput("num_movies", width="100%"))
+                         column(4, valueBoxOutput("num_movies", width="100%")),
+                         column(4, valueBoxOutput("num_tv_shows", width="100%"))
                        ),
-                       plotOutput("movie_rating_plot", height = "302px", width="100%"),
+                ),
+              ),
+              fluidRow(
+                column(12,
                        fluidRow(
-                         column(12, valueBoxOutput("num_tv_shows", width="100%"))
+                         column(4, plotOutput("movie_rating_plot", height = "302px", width="100%")),
+                         column(4, plotOutput("tv_rating_plot", height = "302px", width="100%")),
+                         column(4, plotOutput("top_directors_plot"))
                        ),
-                       plotOutput("tv_rating_plot", height = "302px", width="100%")
-                )
-              )
+                ),
+              ),
+              fluidRow(
+                column(8, plotlyOutput("map_plot", height = "450px")),
+              ),
       ),
       tabItem(tabName = "titlePicker",
               fluidRow(
@@ -149,6 +156,18 @@ ui <- dashboardPage(
 )
 
 server <- function(input, output, session) {
+  
+  output$top_directors_plot <- renderPlot({
+    netflix %>% filter(director != "Not Given") %>%
+      group_by(director) %>%
+      summarise(count = n()) %>%
+      top_n(10, count) %>%
+      ggplot(aes(x = reorder(director, count), y = count)) +
+      geom_col(fill = "red") +
+      coord_flip() +
+      theme_classic()+
+      labs(title = "Top 10 Directors by Count", x = NULL, y = "Count")
+  })
   
   title_type_picker = ""
   rating_picker = ""
@@ -347,23 +366,23 @@ server <- function(input, output, session) {
   
   # Map of Netflix titles by country
   output$map_plot <- renderPlotly({
+    
     # Read the world countries geometries
     world <- ne_countries(scale = "medium", returnclass = "sf")
     
-    # Summarize the Netflix dataset by country
+    # Summarize the Netflix dataset by country and count the number of occurrences of each country
     netflix_summary <- netflix %>%
       group_by(country) %>%
-      summarise(n = n())
+      summarise(n = n()) # %>%
     
-    # Join the Netflix summary data with the world geometries
+    # Join the Netflix summary data with the world geometries on both the name and admin columns
     world_data <- world %>%
-      left_join(netflix_summary, by = c("name" = "country"))
+      st_make_valid() %>%
+      left_join(netflix_summary, by = c("name" = "country")) %>%
+      st_as_sf()
     
     # Replace NA values with 0
     world_data$n[is.na(world_data$n)] <- 0
-    
-    # Make geometries valid
-    world_data <- st_make_valid(world_data)
     
     # Calculate the centroids of the country polygons
     world_data$centroid <- st_centroid(world_data)
@@ -375,30 +394,30 @@ server <- function(input, output, session) {
     # Create a color palette function
     pal <- colorRampPalette(c("white", "red"))
     
-    # Create a map with polygons using plotly
-    plot_ly(data = world_data, type = "scattermapbox",
-            x = ~lon,
-            y = ~lat,
-            color = ~n,
-            colors = pal(10),
-            opacity = 1,
-            hoverinfo = "text",
-            text = ~paste("Country: ", admin, "<br>Number of Titles: ", n), 
-            showlegend = FALSE
-    ) %>%
-      add_polygons(
-        fill = "Reds",
-        fillcolor = "Reds",
-        hovertemplate = "%{text}<extra></extra>"
-      ) %>%
-      layout(mapbox = list(
-        style = "carto-positron",
-        zoom = 0.9,
-        center = list(lon = 0, lat = 0)
-      ),
-      title = "Netflix Titles by Country",
-      margin = list(l = 0, r = 0, b = 0, t = 40, pad = 0)
-      )
+    # Function for setting the aesthetics of the plot
+    my_theme <- function () { 
+      theme_bw() + theme(#axis.text = element_blank(),
+        axis.title = element_text(size = 14),
+        strip.text = element_text(size = 14),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank(),
+        panel.background = element_blank(), 
+        legend.position = "bottom",
+        panel.border = element_blank(), 
+        strip.background = element_rect(fill = 'white', colour = 'white'))
+    }
+    
+    world_map <- ggplot(world_data) +
+      geom_sf(aes(fill = n, text = paste0("Total films: ", n)), color = "grey", size = 0.1) +
+      scale_fill_gradientn(colours = pal(100), na.value = 'black') + 
+      scale_y_continuous(limits = c(-60, 90), breaks = c()) + 
+      scale_x_continuous(breaks = c()) +
+      labs(title = "capt", x = NULL, y = NULL, caption = "capt") +
+      my_theme() 
+    
+    
+    ggplotly(world_map)
+    
   })
   
   
