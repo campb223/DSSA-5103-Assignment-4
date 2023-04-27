@@ -1,0 +1,217 @@
+category,subcategory,subsubcategory,count
+TV Shows,Crime TV Shows,,399
+TV Shows,Crime TV Shows, International TV Shows,231
+TV Shows,Crime TV Shows, Docuseries,84
+TV Shows,Crime TV Shows, TV Dramas,41
+TV Shows,Crime TV Shows, Kids' TV,3
+TV Shows,Crime TV Shows, TV Action & Adventure,21
+TV Shows,Crime TV Shows, Spanish-Language TV Shows,4
+TV Shows,Crime TV Shows, Romantic TV Shows,3
+TV Shows,Crime TV Shows, TV Comedies,11
+TV Shows,Crime TV Shows, TV Horror,1
+TV Shows,International TV Shows,,773
+TV Shows,International TV Shows, Spanish-Language TV Shows,50
+TV Shows,International TV Shows, TV Dramas,195
+TV Shows,International TV Shows, Romantic TV Shows,218
+TV Shows,International TV Shows, TV Action & Adventure,34
+TV Shows,International TV Shows, TV Comedies,78
+TV Shows,International TV Shows, Reality TV,60
+TV Shows,International TV Shows, Korean TV Shows,108
+TV Shows,International TV Shows, Stand-Up Comedy & Talk Shows,12
+TV Shows,International TV Shows,,0
+TV Shows,International TV Shows, TV Horror,13
+TV Shows,International TV Shows, Kids' TV,1
+TV Shows,International TV Shows, TV Mysteries,2
+TV Shows,Kids' TV,,385
+TV Shows,Kids' TV,,0
+TV Shows,Kids' TV, Korean TV Shows,23
+TV Shows,Kids' TV, TV Comedies,104
+TV Shows,Kids' TV, TV Action & Adventure,20
+TV Shows,Kids' TV, TV Sci-Fi & Fantasy,2
+TV Shows,Kids' TV, TV Dramas,5
+TV Shows,Kids' TV, TV Thrillers,5
+TV Shows,Kids' TV, Reality TV,2
+TV Shows,Kids' TV, Spanish-Language TV Shows,5
+TV Shows,Romantic TV Shows,,32
+TV Shows,Romantic TV Shows, TV Comedies,15
+TV Shows,Romantic TV Shows, TV Dramas,13
+TV Shows,Romantic TV Shows, Teen TV Shows,1
+TV Shows,Romantic TV Shows, TV Action & Adventure,1
+TV Shows,Romantic TV Shows, Spanish-Language TV Shows,2
+TV Shows,TV Action & Adventure,,39
+TV Shows,TV Action & Adventure, TV Sci-Fi & Fantasy,9
+TV Shows,TV Action & Adventure, TV Dramas,20
+TV Shows,TV Action & Adventure, TV Horror,1
+TV Shows,TV Action & Adventure, TV Comedies,6
+TV Shows,TV Action & Adventure, TV Mysteries,2
+TV Shows,TV Action & Adventure,,0
+TV Shows,TV Comedies,,119
+TV Shows,TV Comedies,,0
+TV Shows,TV Comedies, TV Dramas,40
+TV Shows,TV Comedies, Teen TV Shows,6
+TV Shows,TV Comedies, TV Horror,1
+TV Shows,TV Comedies, TV Sci-Fi & Fantasy,3
+TV Shows,TV Comedies, TV Mysteries,1
+TV Shows,TV Dramas,,67
+TV Shows,TV Dramas, TV Horror,9
+TV Shows,TV Dramas, Teen TV Shows,6
+TV Shows,TV Dramas,,0
+TV Shows,TV Dramas, TV Mysteries,7
+TV Shows,TV Dramas, TV Sci-Fi & Fantasy,5
+TV Shows,TV Dramas, TV Thrillers,5
+TV Shows,TV Horror,,11
+TV Shows,TV Horror, TV Mysteries,9
+TV Shows,TV Horror, Teen TV Shows,2
+TV Shows,TV Mysteries,,0
+TV Shows,TV Sci-Fi & Fantasy,,1
+TV Shows,TV Sci-Fi & Fantasy, TV Thrillers,1
+TV Shows,Reality TV,,120
+TV Shows,Reality TV,,0
+TV Shows,Reality TV, Teen TV Shows,3
+TV Shows,Reality TV, Romantic TV Shows,11
+TV Shows,Reality TV, Science & Nature TV,3
+TV Shows,Reality TV, TV Action & Adventure,1
+TV Shows,Reality TV, TV Horror,1
+TV Shows,Reality TV, TV Comedies,5
+TV Shows,Reality TV, Spanish-Language TV Shows,1
+TV Shows,Spanish-Language TV Shows,,2
+TV Shows,Spanish-Language TV Shows, TV Dramas,2
+TV Shows,Classic & Cult TV,,20
+TV Shows,Classic & Cult TV, Crime TV Shows,5
+TV Shows,Classic & Cult TV, TV Action & Adventure,6
+TV Shows,Classic & Cult TV, TV Dramas,1
+TV Shows,Classic & Cult TV, Kids' TV,3
+TV Shows,Classic & Cult TV, TV Comedies,3
+TV Shows,Classic & Cult TV, TV Horror,1
+TV Shows,Classic & Cult TV, TV Sci-Fi & Fantasy,1
+TV Shows,Docuseries,,220
+TV Shows,Docuseries, Reality TV,22
+TV Shows,Docuseries,,0
+TV Shows,Docuseries, International TV Shows,59
+TV Shows,Docuseries, Science & Nature TV,42
+TV Shows,Docuseries, TV Sci-Fi & Fantasy,1
+TV Shows,Docuseries, Spanish-Language TV Shows,3
+TV Shows,Docuseries, TV Comedies,3
+TV Shows,Docuseries, Stand-Up Comedy & Talk Shows,3
+TV Shows,Docuseries, Kids' TV,1
+TV Shows,Docuseries, TV Dramas,2
+TV Shows,Science & Nature TV,,0
+TV Shows,Stand-Up Comedy & Talk Shows,,34
+TV Shows,Stand-Up Comedy & Talk Shows, TV Comedies,27
+TV Shows,Stand-Up Comedy & Talk Shows,,0
+TV Shows,Stand-Up Comedy & Talk Shows, TV Mysteries,1
+TV Shows,TV Thrillers,,0
+Movies,Action & Adventure,,859
+Movies,Action & Adventure, Dramas,190
+Movies,Action & Adventure, Classic Movies,25
+Movies,Action & Adventure, Horror Movies,25
+Movies,Action & Adventure,,0
+Movies,Action & Adventure, Anime Features,50
+Movies,Action & Adventure, Comedies,174
+Movies,Action & Adventure, Sci-Fi & Fantasy,64
+Movies,Action & Adventure, International Movies,138
+Movies,Action & Adventure, Children & Family Movies,22
+Movies,Action & Adventure, Cult Movies,10
+Movies,Action & Adventure, Thrillers,4
+Movies,Action & Adventure, Romantic Movies,4
+Movies,Action & Adventure, Sports Movies,2
+Movies,Action & Adventure, Independent Movies,15
+Movies,Action & Adventure, Documentaries,7
+Movies,Action & Adventure, Faith & Spirituality,1
+Movies,Anime Features,,21
+Movies,Anime Features, Documentaries,1
+Movies,Anime Features, Children & Family Movies,10
+Movies,Anime Features, International Movies,5
+Movies,Anime Features, Music & Musicals,3
+Movies,Anime Features, Romantic Movies,1
+Movies,Anime Features,,0
+Movies,Classic Movies,,80
+Movies,Classic Movies, Comedies,16
+Movies,Classic Movies, Dramas,44
+Movies,Classic Movies, Music & Musicals,1
+Movies,Classic Movies, Cult Movies,5
+Movies,Classic Movies, Thrillers,1
+Movies,Classic Movies, Documentaries,11
+Movies,Classic Movies, Horror Movies,1
+Movies,Classic Movies, Independent Movies,1
+Movies,Comedies,,1210
+Movies,Comedies, Dramas,449
+Movies,Comedies,,0
+Movies,Comedies, International Movies,408
+Movies,Comedies, Romantic Movies,81
+Movies,Comedies, Cult Movies,30
+Movies,Comedies, Music & Musicals,10
+Movies,Comedies, Independent Movies,63
+Movies,Comedies, Documentaries,3
+Movies,Comedies, Horror Movies,36
+Movies,Comedies, LGBTQ Movies,4
+Movies,Comedies, Sports Movies,8
+Movies,Comedies, Faith & Spirituality,5
+Movies,Comedies, Sci-Fi & Fantasy,3
+Movies,Documentaries,,829
+Movies,Documentaries,,0
+Movies,Documentaries, International Movies,278
+Movies,Documentaries, Music & Musicals,82
+Movies,Documentaries, Sports Movies,65
+Movies,Documentaries, LGBTQ Movies,26
+Movies,Documentaries, Dramas,3
+Movies,Documentaries, Faith & Spirituality,12
+Movies,Documentaries, Stand-Up Comedy,2
+Movies,Documentaries, Horror Movies,2
+Movies,Dramas,,1599
+Movies,Dramas, Independent Movies,447
+Movies,Dramas, International Movies,783
+Movies,Dramas, Horror Movies,3
+Movies,Dramas, Thrillers,82
+Movies,Dramas,,0
+Movies,Dramas, Romantic Movies,62
+Movies,Dramas, Faith & Spirituality,34
+Movies,Dramas, Sports Movies,19
+Movies,Dramas, Music & Musicals,12
+Movies,Dramas, Sci-Fi & Fantasy,11
+Movies,Dramas, LGBTQ Movies,9
+Movies,Faith & Spirituality,,0
+Movies,Horror Movies,,275
+Movies,Horror Movies, Sci-Fi & Fantasy,10
+Movies,Horror Movies, International Movies,105
+Movies,Horror Movies,,0
+Movies,Horror Movies, Independent Movies,47
+Movies,Horror Movies, LGBTQ Movies,3
+Movies,Horror Movies, Thrillers,54
+Movies,Horror Movies, Romantic Movies,1
+Movies,Independent Movies,,20
+Movies,Independent Movies, International Movies,5
+Movies,Independent Movies, Thrillers,11
+Movies,Independent Movies, Sci-Fi & Fantasy,3
+Movies,Independent Movies,,0
+Movies,International Movies,,128
+Movies,International Movies, Thrillers,67
+Movies,International Movies, Music & Musicals,20
+Movies,International Movies, Romantic Movies,21
+Movies,International Movies,,0
+Movies,International Movies, Sci-Fi & Fantasy,13
+Movies,International Movies, Sports Movies,1
+Movies,International Movies, LGBTQ Movies,3
+Movies,LGBTQ Movies,,1
+Movies,LGBTQ Movies, Thrillers,1
+Movies,Music & Musicals,,18
+Movies,Music & Musicals,,0
+Movies,Music & Musicals, Romantic Movies,1
+Movies,Music & Musicals, Stand-Up Comedy,7
+Movies,Romantic Movies,,3
+Movies,Romantic Movies,,0
+Movies,Sci-Fi & Fantasy,,13
+Movies,Sci-Fi & Fantasy, Thrillers,12
+Movies,Sci-Fi & Fantasy,,0
+Movies,Sports Movies,,1
+Movies,Sports Movies,,0
+Movies,Thrillers,,65
+Movies,Thrillers,,0
+Documentaries,International Movies, International Movies,278
+Documentaries,Music & Musicals, Music & Musicals,82
+Documentaries,Sports Movies, Sports Movies,65
+Documentaries,LGBTQ Movies, LGBTQ Movies,26
+Documentaries,Dramas, Dramas,3
+Documentaries,Faith & Spirituality, Faith & Spirituality,12
+Documentaries,Stand-Up Comedy, Stand-Up Comedy,2
+Documentaries,Horror Movies, Horror Movies,2

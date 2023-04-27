@@ -9,10 +9,10 @@ library(lubridate)
 library(stringr)
 
 #working directory
-setwd("~/Desktop/R Studio/TeamA")
+#setwd("~/Desktop/R Studio/TeamA")
 
 #reading our dataset
-netflix <- read_csv('netflix.csv', col_names = TRUE)
+netflix <- read_csv('../Team1_Assignment4/netflix.csv', col_names = TRUE)
 
 #viewing the data
 dim(netflix) 
@@ -162,7 +162,7 @@ country <-netflix %>%
 
 origin <-view(sort(table(country), decreasing = TRUE))
 barplot(sort(table(country), decreasing = TRUE))
-barplot(sort(table(country), decreasing = FALSE) horiz = TRUE, 
+barplot(sort(table(country), decreasing = FALSE), horiz = TRUE, 
         main = "Number of Observations by Country", 
         xlab = "Number of Observations", ylab = "Country",
         las = 1)
