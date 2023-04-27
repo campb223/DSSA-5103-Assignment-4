@@ -12,7 +12,7 @@ library(stringr)
 #setwd("~/Desktop/R Studio/TeamA")
 
 #reading our dataset
-netflix <- read_csv('data/netflix.csv', col_names = TRUE)
+netflix <- read_csv('../Team1_Assignment4/netflix.csv', col_names = TRUE)
 
 #viewing the data
 dim(netflix) 
